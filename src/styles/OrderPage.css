@@ -1,0 +1,162 @@
+.order-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;        /* Horizontal center */
+  justify-content: center;    /* Vertical center */
+  min-height: 100vh;          /* Full screen height */
+  padding: 1rem;
+}
+
+
+.order-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tab.active {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 cards per row */
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .orders-grid {
+    grid-template-columns: repeat(2, 1fr); /* On tablets: 2 per row */
+  }
+}
+
+@media (max-width: 640px) {
+  .orders-grid {
+    grid-template-columns: 1fr; /* On mobile: 1 per row */
+  }
+}
+  
+
+
+.order-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: white;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.badge.ongoing {
+  background-color: orange;
+  color: white;
+}
+
+.badge.completed {
+  background-color: green;
+  color: white;
+}
+
+.badge.cancelled {
+  background-color: red;
+  color: white;
+}
+
+.order-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.order-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.dish-name {
+  font-weight: bold;
+}
+
+.order-id,
+.order-date {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.order-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.order-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.btn-outline,
+.btn-primary {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #333;
+  color: #333;
+}
+
+.btn-primary {
+  background: #333;
+  color: white;
+}
+

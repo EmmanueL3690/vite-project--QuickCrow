@@ -1,0 +1,290 @@
+.page {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(to right, #E67817, #4FB138);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.search-bar4 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  max-width: 530px;
+  margin: 0 auto;
+}
+
+.search-bar4 {
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+ .it{
+  padding: 15px;
+  width: 20rem;
+  border-radius: 8px;
+  font-size: 16px;
+
+ }
+
+.search-bar4 button {
+  padding: 13px;
+  border: none;
+  background: white;
+  color: #f97316;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Section layout */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Categories */
+.browse-categories {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.browse-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.category-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.category-image {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.category-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+/* Professionals */
+.pros {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.pro-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.pro-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.rating-score {
+  font-weight: bold;
+}
+
+.rating-reviews {
+  color: gold;
+}
+
+
+.star {
+  color: #facc15;
+}
+
+.star.muted {
+  color: #ccc;
+}
+
+.view-profile {
+  padding: 8px 16px;
+  border: 1px solid #f97316;
+  background: white;
+  color: #f97316;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Testimonials */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fefefe;
+}
+
+.testimonial-slider-wrapper {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-slider {
+  display: flex;
+  animation: slide 30s linear infinite;
+  gap: 20px;
+  width: fit-content;
+}
+
+.testimonial-card {
+  flex: 0 0 80%;
+  max-width: 350px;
+  background: #FFF3E0;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.star {
+  color: gold;
+}
+
+.star.muted {
+  color: #ccc;
+}
+
+.review {
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* Animation for infinite scroll */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive tweaks */
+@media (min-width: 768px) {
+  .testimonial-card {
+    flex: 0 0 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-card {
+    flex: 0 0 30%;
+  }
+}
+
+
+/* Infinite slide keyframes */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* CTA */
+.cta {
+  background: #fff3e0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.view-profile:hover{
+  /* border-radius: 30px; */
+  font-size: 13px;
+  padding: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: #f97316;
+  color: green;
+}
+

@@ -1,0 +1,76 @@
+.explore-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.explore-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #222;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.location-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+}
+
+.location-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.location-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+}
+
+.location-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.location-icon {
+  width: 20px;
+  height: 20px;
+  color: #666;
+}
+
+.location-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 900px) {
+  .location-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+  .location-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
