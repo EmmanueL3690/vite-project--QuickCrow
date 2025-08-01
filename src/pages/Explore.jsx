@@ -6,7 +6,6 @@ import TrendingNow from "../components/TrendingNow";
 import ExploreByLocation from "../components/ExploreByLocation";
 import FadeInSection from "../components/FadeInSection";
 import BackToTop from '../components/BackToTop.jsx';
-import ErrorBoundary from '../components/ErrorBoundary'; // import it
 
 export default function Explore() {
   return (
@@ -16,9 +15,7 @@ export default function Explore() {
       </FadeInSection>
 
       <FadeInSection delay={0.1}>
-        <ErrorBoundary>
           <FeaturedRestaurants />
-        </ErrorBoundary>
       </FadeInSection>
 
       <FadeInSection delay={0.2}>
